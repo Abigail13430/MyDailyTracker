@@ -2,6 +2,14 @@ const intelligence = document.getElementById("aname"); //placeholder
 const savedTime = localStorage.getItem("startTime"); //placeholder
 
 //load
+//Streak Counter
+
+if (!localStorage.getItem("streakCounter"))  {
+    console.log("Creating streak counter")
+        localStorage.setItem("streakCounter", "0");
+    }
+
+//Variables
 let intelligenceXP = parseInt(localStorage.getItem("intelligenceXP"));
 let charismaXP = parseInt(localStorage.getItem("charismaXP"));
 let athleticismXP = parseInt(localStorage.getItem("athleticismXP"));
