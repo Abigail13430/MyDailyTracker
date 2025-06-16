@@ -148,10 +148,12 @@ function calculateScore(XPlst) {
 progress_reset_button.addEventListener("click", () => {
     updateStreak();
     dailyReset();
+    window.location.reload();
 });
 
 streak_reset_button.addEventListener("click", () => {
     localStorage.setItem("streakCounter", "0");
+    window.location.reload();
 });
 
 //Running Code
