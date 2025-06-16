@@ -168,7 +168,7 @@ streak_reset_button.addEventListener("click", () => {
 });
 
 //Running Code
-const sendEmailParameter = true;
+const sendEmailParameter = false;
 
 if (shouldRunToday()) {
   sendSummary();
