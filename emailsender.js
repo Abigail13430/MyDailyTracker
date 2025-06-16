@@ -67,6 +67,17 @@ function sendSummary() {
     const comboSummary = calculateScore([intelligenceXP, charismaXP, athleticismXP, willPowerXP, happinessXP]);
     console.log(comboSummary);
 
+    const finalSummary = `Raw Summary:
+
+        ${summary} 
+
+        Combo Summary: 
+
+        ${comboSummary}`;
+
+    
+    console.log(finalSummary);
+
     const now = new Date();
     const today_time = now.toLocaleTimeString();
 
@@ -164,6 +175,6 @@ if (shouldRunToday()) {
   updateStreak();
   dailyReset();
 }
-  
+
 
 
