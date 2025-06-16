@@ -1,0 +1,132 @@
+body {
+    display: block;
+    color: black;
+    gap: 5px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; /* Pushes content to opposite ends */
+    align-items: center;
+    padding: 10px;
+}
+
+#streak {
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Keep them vertically aligned */
+    position: relative;
+    overflow: visible;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#streak img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#streak_label {
+    position: absolute;
+    top: 73%;
+    left: 39%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    z-index: 3;
+    font-size: 20px;
+    pointer-events: none; /* Ensures it doesn't block button clicks */
+}
+
+/*Borders to see boxes
+#intelligence, #charisma, #athleticism, #willpower, #happiness {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+*/
+
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 8px;
+  overflow: visible;
+  height: 24px; 
+  padding: 14px 0;
+}
+
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: 0%; /* Default width that grows dynamically */
+  transition: width 0.3s ease;
+}
+
+
+.progress-label {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  color: black;
+  font-weight: bold;
+  z-index: 2;
+  pointer-events: none; /* Ensures it doesn't block button clicks */
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    /*border-top: 2px solid black;*/
+}
+
+.bottom-buttons button {
+    flex-grow: 1;
+    padding: 14px 0;
+    font-size: 16px;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 0px 0px #212f3d;
+    background-color: #808b96;
+    background-image:  radial-gradient(ellipse farthest-corner, white 20%, #566573 80%);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 1px 0px 0px #212f3d;
+}
+
+#happiness-progress {
+    background-color: #58d68d;
+    background-image: repeating-linear-gradient(45deg,#58d68d, #58d68d 10px,#2ecc71 10px, #2ecc71 20px);
+}
+
+#willPower-progress {
+    background-color: #5dade2;
+    background-image: repeating-linear-gradient(45deg,#5dade2, #5dade2 10px,#3498db 10px, #3498db 20px);
+}
+#athleticism-progress {
+    background-color: #f4d03f ;
+    background-image: repeating-linear-gradient(45deg,#f4d03f, #f4d03f 10px,#f1c40f 10px, #f1c40f 20px);
+}
+#charisma-progress {
+    background-color: #eb984e ;
+    background-image: repeating-linear-gradient(45deg,#eb984e , #eb984e 10px,#e67e22 10px, #e67e22 20px);
+}
+#intelligence-progress {
+    background-color: #ec7063;
+    background-image: repeating-linear-gradient(45deg,#ec7063, #ec7063 10px,#e74c3c 10px, #e74c3c 20px);
+}
+

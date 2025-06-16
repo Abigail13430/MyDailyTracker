@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <!-- THIS IS THE HOME PAGE-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5260/5260498.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="tracker.css">
+        <title>MyDailyTracker</title>
+    </head>
+    <body>
+        <!--Email Function-->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "DRePkdYKku6l8-Pn2",
+                });
+            })();
+        </script>
+        <div id="header">
+            <h1>XP Tracker</h1>
+            <div id="streak">
+                <img id="streak_icon" src="icons/unlit_fire_icon.png" alt="Unlit Streak Icon">
+                <span id="streak_label">0</span>
+            </div>
+        </div>
+        <h3>
+            <div id="intelligence">
+                <div class="progress-bar">
+                    <div class="progress" id="intelligence-progress"></div>
+                    <span class="progress-label" id="intelligence-label">Intelligence: 0/300</span>
+                </div>
+                   
+                <div class="bottom-buttons">
+                    <button id="academicSY">Academic SY (30 min) +50XP</button>
+                </div>
+            </div>
+
+            <div id="charisma">
+                <div class="progress-bar">
+                    <div class="progress" id="charisma-progress"></div>
+                    <span class="progress-label" id="charisma-label">Charisma: 0/300</span>
+                </div>
+                <div class="bottom-buttons">
+                    <button id="jobApps">Job Apps (30 min) +50XP</button>
+                    <button id="research">Research (30 min) +75XP</button>
+                </div>
+            </div>
+            <div id="athleticism">
+                <div class="progress-bar">
+                    <div class="progress" id="athleticism-progress"></div>
+                    <span class="progress-label" id="athleticism-label">Athleticism: 0/300</span>
+                </div>
+                <div class="bottom-buttons">
+                    <button id="walkHershey">Walk Hershey (0.5 miles) +20XP</button>
+                    <button id="exercise">Exercise (1 set) +50XP</button>
+                </div>
+            </div>
+            <div id="willPower">
+                <div class="progress-bar">
+                    <div class="progress" id="willPower-progress"></div>
+                    <span class="progress-label" id="willPower-label">Will Power: 0/300</span>
+                </div>
+                <div class="bottom-buttons">
+                    <button id="personalProjects">Personal Projects (30 min) +50XP</button>
+                    <button id="extra">... +50XP</button>
+                </div>
+            </div>
+            <div id="happiness">
+                <div class="progress-bar">
+                    <div class="progress" id="happiness-progress"></div>
+                    <span class="progress-label" id="happiness-label">Happiness: 0/300</span>
+                </div>
+                <div class="bottom-buttons">
+                    <button id="hobbies">Intentional Hobbies (30 min) +50XP</button>
+                    <button id="reading">Summer Reading (30 min) +40XP</button>
+                </div>
+            </div>
+            <div id="progress_reset">
+                <button id="progress_reset_button">Reset Progress</button>
+            </div>
+             <div id="streak_reset">
+                <button id="streak_reset_button">Reset Streak</button>
+            </div>
+
+        </h3>
+        <script src="emailsender.js"></script>
+        <script src="tracker.js"></script>
+    </body>
+</html>

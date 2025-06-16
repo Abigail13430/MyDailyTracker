@@ -1,0 +1,20 @@
+{
+    "lang": "en-us",
+    "name": "MyDailyTracker",
+    "short_name": "MyDailyTracker",
+    "description": "A basic site to keep track of 2025 Summer events",
+    "start_url": "/MyDailyTracker/index.html", 
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "scope": "/MyDailyTracker/",
+    "icons": [
+        {
+            "src": "/MyDailyTracker/MyDailyTracker_icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+
+        }
+    ]
+}
