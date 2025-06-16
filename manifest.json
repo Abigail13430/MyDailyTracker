@@ -11,7 +11,7 @@
     "scope": "/MyDailyTracker/",
     "icons": [
         {
-            "src": "/MyDailyTracker/MyDailyTracker_icon.png",
+            "src": "/MyDailyTracker/icons/MyDailyTracker_icon.png",
             "sizes": "512x512",
             "type": "image/png"
 
